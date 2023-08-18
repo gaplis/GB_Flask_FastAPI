@@ -1,0 +1,19 @@
+<head>
+    <title>
+        {% block title %}
+            Задание 8: Базовые и дочерние шаблоны
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <h1>Задание 8: Базовые и дочерние шаблоны - {{ title }}</h1>
+    <a href="/" class="nav-link">Главная</a>
+    <a href="/contacts/" class="nav-link">Контакты</a>
+    <a href="/about/" class="nav-link">О сайте</a><br>
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+    <hr>
+    <p>From Nizhniy Novgorod with love ♥</p>
+</body>
+

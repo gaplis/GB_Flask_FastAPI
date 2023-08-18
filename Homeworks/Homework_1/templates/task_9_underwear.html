@@ -1,0 +1,15 @@
+{% extends 'task_9_base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h3>Каталог верхней одежды</h3>
+            <p><b>Футболка</b></p>
+            <p>Цена: 1000 рублей</p>
+            <img src="/static/image/1.jpg" width="200" height="300" alt="Тут должно было быть фото :("><br>
+            <p><b>Рубашка</b></p>
+            <p>Цена: 1500 рублей</p>
+            <img src="/static/image/2.jpg" width="200" height="250" alt="Тут должно было быть фото :(">
+{% endblock %}

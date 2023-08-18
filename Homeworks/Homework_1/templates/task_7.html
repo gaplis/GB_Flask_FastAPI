@@ -1,0 +1,11 @@
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    {% for n in news %}
+        <p><b>{{ n.news_title }}</b></p>
+        <p>{{ n.short_body }}</p>
+        <p><i>{{ n.time_publish }}</i></p>
+    {% endfor %}
+</body>

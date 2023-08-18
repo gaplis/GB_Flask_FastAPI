@@ -1,0 +1,12 @@
+{% extends 'task_9_base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h3>Наш каталог</h3>
+    <h3><a href="/underwear/" class="nav-link">Верхняя одежда</a></h3>
+    <h3><a href="/outerwear/" class="nav-link">Нижняя одежда</a></h3>
+    <h3><a href="/shoes/" class="nav-link">Обувь</a></h3>
+{% endblock %}
