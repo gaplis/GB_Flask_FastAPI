@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            {% for i in sheet_head %}
+                <td>{{ i }}</td>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in sheet_content %}
+            <tr>
+                {% for i in item %}
+                    <td>{{ i }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
