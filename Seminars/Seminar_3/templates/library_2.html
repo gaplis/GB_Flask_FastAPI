@@ -1,0 +1,16 @@
+<head>
+    <title>
+        Мой сайт
+    </title>
+</head>
+<body>
+<div class="row">
+    {% for book in library %}
+    <p>Название книги: {{ book.name }}<br>
+        Год выпуска: {{ book.year }}<br>
+        Количество экземпляров: {{ book.count }}<br>
+        Автор: {{ book.author }}<br>
+    </p>
+    {% endfor %}
+</div>
+</body>

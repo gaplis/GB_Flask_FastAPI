@@ -1,0 +1,18 @@
+<head>
+    <title>
+        Мой сайт
+    </title>
+</head>
+<body>
+<div class="row">
+    {% for student in university %}
+    <p>Имя студента: {{ student.first_name }}<br>
+        Фамилия студента: {{ student.last_name }}<br>
+        Возраст студента: {{ student.age }}<br>
+        Пол студента: {{ student.gender }}<br>
+        Группа студента: {{ student.group }}<br>
+        Факультет студента: {{ student.faculty_id }}<br>
+    </p>
+    {% endfor %}
+</div>
+</body>
