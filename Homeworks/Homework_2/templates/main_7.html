@@ -1,0 +1,13 @@
+<head>
+    <title>Задание №7: Квадрат числа</title>
+</head>
+<body>
+    {% if res %}
+        <h2>Число: {{ num }}<br>Квадрат: {{ square }}<br></h2>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Введите число" name="num"><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
