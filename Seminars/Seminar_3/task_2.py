@@ -6,7 +6,7 @@
 # Необходимо создать связь между таблицами "Книги" и "Авторы".
 # Написать функцию-обработчик, которая будет выводить список всех книг с указанием их авторов.
 
-from random import randint, choices
+from random import randint
 
 from flask import Flask, render_template
 from bd_2 import db, Authors, Books

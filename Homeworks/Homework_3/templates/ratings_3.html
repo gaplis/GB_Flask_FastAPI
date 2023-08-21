@@ -1,0 +1,20 @@
+<head>
+    <title>
+        Мой сайт
+    </title>
+</head>
+<body>
+<div class="row">
+    {% for student in university %}
+    <p>Имя студента: {{ student.first_name }} {{ student.last_name }}<br>
+        {% for r in student.rating_id %}
+            {% for rate in ratings %}
+                {% if r == rate %}
+                Предмет: {{ rate.name }}, {{ rate.rating }}<br>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </p><br>
+    {% endfor %}
+</div>
+</body>
