@@ -15,7 +15,7 @@ database = databases.Database(DATABASE_URL)
 metadata = sqlalchemy.MetaData()
 
 tasks = sqlalchemy.Table(
-    "users",
+    "tasks",
     metadata,
     sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column("title", sqlalchemy.String(32)),
